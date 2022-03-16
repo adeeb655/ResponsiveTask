@@ -8,6 +8,14 @@ body{
     margin: 0;
     font-family: 'Poppins', sans-serif;    
 }
+@media(min-width:1024px){
+    .container{
+        width: 1170px;
+        max-width:100%;
+        margin: 0 auto;
+        padding: 0px 15px;
+    }
+}
 @media(min-width:1500px){
     .container{
         width: 1476px;
@@ -58,6 +66,9 @@ nav ul li a{
 nav ul li{
     padding: 0px 15px;
 }
+.head_logo{
+    max-width: 200px;
+}
 a.nav-link.btn.btn-danger.text-white {
     padding: 9px 35px;
 }
@@ -74,7 +85,8 @@ a.nav-link.nav-btn-wraper {
 .banner{
     background-image:url('./../images/Banner-img.png');
     position: relative;
-    height: 700px;
+    background-size: cover;
+    padding: 7% 0;
 }
 .banner img{
     width: 100%;
@@ -86,7 +98,7 @@ a.nav-link.nav-btn-wraper {
     color: #FFFFFF;
 }
 .banner_content{
-    padding-top: 30%;
+    /* padding-top: 30%; */
     color: white;
 }
 .banner_content h1{
@@ -117,9 +129,8 @@ padding-bottom: 30px;
     text-decoration: none;
     padding: 10px 15px 10px 20px;
     font-weight: 700;
-    font-size: 20.6279px;
+    font-size: 20px;
     border: none;
-    /* line-height: 31px; */
 }
 .card_height{
     min-height: 90px;
@@ -128,6 +139,7 @@ h4.card-title {
     font-weight: 700;
     font-size: 24px;
     line-height: 46px;
+    text-align: left;
     overflow: hidden;
 text-overflow: ellipsis;
 display: -webkit-box;
@@ -138,6 +150,7 @@ p.card-text {
     font-size: 17px;
     font-weight: 500;   
     line-height: 24px;
+    text-align: left;
     overflow: hidden;
 text-overflow: ellipsis;
 display: -webkit-box;
@@ -151,14 +164,12 @@ display: -webkit-box;
     position: relative;
 }
 section#solutions {
-    padding: 100px 0px 150px 0px;
+    padding: 75px 0px 70px 0px;
 }
  .solution-heading{
      text-align: center;
   font-family: 'Poppins', sans-serif;
 font-weight: 500;
-/* font-size: 40px; */
-/* line-height: 81px;  */
 }  
 .line-break{
     display: block;
@@ -169,15 +180,15 @@ font-weight: 500;
 }
 .solution-heading h2{
 font-weight: 700;
-font-size: 54.1482px;
+font-size: 54px;
 line-height: 81px;
 }
 .solution-heading p{
 font-weight: 600;
 font-size: 28px;
 line-height: 18px;
-/* padding-bottom: 38px; */
 }
+
 .solution-heading h2::before{
     content:"";
     position: absolute;
@@ -194,7 +205,7 @@ line-height: 18px;
     color: red;
     position: relative; 
     left: 80%;
-    top: -39px;
+    top: -25px;
 }  
 .card_arrow{
         font-size: 23px;
@@ -204,17 +215,14 @@ line-height: 18px;
 }
 .cards{
     display: flex;
-    /* width: 80%; */
-    /* margin: 0 auto; */
     font-family: 'Poppins', sans-serif;
 }
 .card-content{
     background-color:#FCFCFC;
     margin:20px 10px;
-    /* box-shadow: 1px 0px 14px rgb(204, 195, 195) ; */
     width: 33.33%;
     border: 1px solid #CECECE;
-    border-radius: 2.57848px;
+    border-radius: 2px;
 }
 .card-content figure img{
     width: 100%;
@@ -234,7 +242,7 @@ line-height: 18px;
 button.btn.btn-light {  
     color: red;
     border: none;
-    margin: 0px 0px 0px -10px;
+    margin: 0px 0px 0px -257px;
     background-color: transparent;
     padding: 10px;    font-family: 'Poppins', sans-serif;
     font-weight: 700;
@@ -246,6 +254,15 @@ button.btn.btn-light::after{
     padding: 10px;
     color: red;
 }
+.owl-carousel .owl-item img {
+     display:inline;
+    width: 236px;
+}
+.companies_logo .owl-carousel .owl-stage{
+display: flex;
+align-items: center;
+}
+
 .companies{
     padding: 40px 0px;
     border: 1px solid #CECECE;
@@ -253,11 +270,12 @@ button.btn.btn-light::after{
 .companies-heading{
    display: flex;
    flex-direction: column;
-  align-items: center;
+   align-items: center;
    padding-top: 30px;
    font-family: 'Poppins', sans-serif;
    color: #3D3D3D;
    font-size: 20px;
+   text-align: center;
 }
 .companies-heading h2{
     font-weight: 800;
@@ -268,16 +286,13 @@ button.btn.btn-light::after{
     font-weight: 700;
     font-size: 28px;
     line-height: 43px;
-    padding-top: 10px;
+    padding-top: 8px;
     padding-bottom: 80px;
 }
 .companies_logo{
     align-items: center;
     max-width: 100%;
     filter: grayscale(100%);
-}
-.companies_logo img{    
-    max-width: 56%;
 }
 .row.companies_logo .col {
     text-align: center;
@@ -297,12 +312,13 @@ button.btn.btn-light::after{
     background-color: black;
     color: white;
     padding: 114px 0px;
-    margin: 150px 0px 140px 0px;
+    margin: 50px 0 85px;
 }
 .right h3{
     font-weight: 500;
     font-size: 54px;
     line-height: 81px; 
+    padding: 10px 0px;
 }
 .right p{
     font-size: 41px;
@@ -310,15 +326,16 @@ button.btn.btn-light::after{
     padding-bottom: 30px;
 }
 .drop_btn{
-    width: 700px;
-    background-color:transparent;   
+    width: 100%;
+    background-color:transparent;
     border: none;
     border-bottom: 2px solid red;
     font-weight: 700;
     font-size:1.7rem;
+    text-align: left;
 }
 .left p{
-    font-size: 25.7848px;
+    font-size: 25px;
     line-height: 187.95%;
 }
 .left input{
@@ -332,30 +349,23 @@ button.btn.btn-light::after{
 }
 .dropdown-toggle::after {
     margin-left: 17em;
-
+    position: absolute;
+    right: 6px;
+    top: 30px;
 }
-/* .left,
-.right{
-    width: 45%;
-} */
- /* .insights{
-    background-color: brown; 
-     text-align: center; 
-}  */
+
 .card-text:last-child {
     margin-bottom: -26px;
 }
-/* .card-body{
-    padding: 15px 0px 0px 15px;
-} */
+
 .insights_heading{
     text-align: center;
-    padding: 0px 0px 40px 0px;
+    padding: 0px 0px 0 0px;
 }
 .insights_heading h2{
     font-weight: 700;
 font-size: 44px;
-line-height: 81px;
+line-height: 31px;
 }   
 .insights_heading p{
     font-weight: 600;
@@ -366,7 +376,7 @@ color: #3D3D3D;
 .insight_card{
     background-color:#FCFCFC ;
     width: 30%;
-    box-shadow: 0px 5.15697px 30.9418px rgba(0, 0, 0, 0.02);
+    box-shadow: 0px 5px 30.9418px rgba(0, 0, 0, 0.02);
     border: 1px solid #CECECE;
 }
 .insight_card img{
@@ -383,41 +393,35 @@ padding: 10px 0px 19px 15px;
     justify-content: space-around;
 }
 .footer{
-    margin-top: 150px;
+    margin-top: 85px;
     background-color: black;
     width: 100%;
 }
 .footer_top{
-    /* border: 1px solid yellow; */
     color: whitesmoke;
-    display: flex;      
+    /* display: flex; */
     width: 100%;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     padding: 70px 0px;
+    width: 100%;
 }
-/* .footer_top img{
-    
-} */
+
 .footer_top li{
     list-style: none;
     font-size: 18px;
     line-height: 35px;
     font-weight: 600;
 }
-/* .footer_top_content li:nth-child(2){
-    color: red;                     
-} */
+
 .footer_top_content li{
     font-weight: 500;
     font-size: 20px;    
     line-height: 31px;
 }
 .footer_top_content h4{
-    color: red      ;
+    color: red;
 }
-/* .footer_top_content{
-    width: 20%;
-} */
+
 .vector{
     height: 40px;
     border: 1px solid #EEEEEE;
@@ -430,14 +434,11 @@ padding: 10px 0px 19px 15px;
     line-height: 24px;
 }
 .footer_mid{
-    /* border: 1px solid red; */
     color: whitesmoke;
     display: flex;
     justify-content: space-between;
 }
-    /* .footer_mid_content{
-        width: 20%;
-    } */
+    
 input[type="email"] {
     margin-bottom: 0;
     padding:8px 15px;
@@ -461,13 +462,15 @@ input[type="email"] {
     justify-content: space-between;
 }
 .footer_bottom p{
-    font-size: 20.6279px;
+    font-size: 20px;
     line-height: 202%;
 }
 .footer_bottom a{
-    /* margin: 10px; */
     padding: 10px;
 
+}
+.footer_icons{
+    margin:15px 5px;
 }
 .footer_icons i{
     border: 1px solid white;
@@ -475,10 +478,9 @@ input[type="email"] {
     border-radius: 50%;
      color: white;
      height: 40px;
+     margin: 5px 0px;
      width: 40px;
-}
-.owl-carousel img {
-    justify-content: center;
+
 }
 .stories{
     padding: 150px 0px;
@@ -488,11 +490,13 @@ input[type="email"] {
 font-size: 40px;
 line-height: 81px;
 padding: 9px 0px;
-
+}
+.item{
+    /* align-items: center; */
+    text-align: center;
 }
 .stories_left{
     padding:50px 50px;
-
 }
 .stories_left h4{
     font-weight: 700;
@@ -503,31 +507,67 @@ line-height: 62px;
     font-size: 23px;
 }
 .stories_content{
-/* display: flex; */
 box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.02);
 border-radius: 2px;
 background-color: #FCFCFC;
 border: 1px solid #CECECE;
 border-radius: 2px;
 }
+@media only screen and (max-width:1024px){
+    button.btn.btn-light{
+        margin-left: -106px;
+    }
+    input[type="email"]{
+        padding: 8px 0px;
+    }
+    .footer_log{
+        max-width: 200px;
+    }
+}
 @media only screen and (max-width:768px){
     .wraper h3{
         font-size: 30px;
+        line-height:40px;
+    }
+    .banner_content h1{
+        font-size:47px;
+        line-height: 60px;
     }
     .right p, .left p{
         font-size: 18px;
+        line-height:24px;
     }
     .dropdown{
         height: 100px;
-        width: 200px;
+        width: 252px;
     }
     button#dropdownMenuButton {
         height: 52px;
-        width: 282px;
-    }   
+        width: 100%;
+        text-align: left;
+        padding: 0;
+    }
+    .companies_logo .owl-stage{
+        display: flex;
+        align-items: center;
+    }
+    .owl-stage{
+        display: flex;
+        align-items: center;
+    }
+    .owl-carousel .owl-stage{
+        display: flex;
+        align-items: center;
+    }
+    .companies_logo .owl-stage{
+        display: flex;
+        align-items: center;
+    }
+    
     .companies-heading h2{
         font-size: 36px;
-    } 
+    }
+
     .dropdown-toggle::after {
         margin-left: 13%;
     }
@@ -541,7 +581,7 @@ border-radius: 2px;
         padding: 10px;
         color: red;
         position: relative;
-        left: 69%;
+        left: 84%;
         top: -29px;
     }
     .right p{
@@ -550,22 +590,159 @@ border-radius: 2px;
     h4.card-title{
         font-size: 18px;
     }
+    #solutions{
+        padding: 50px 0px 50px 0px;
+    }
     #talk{
-        
         padding: 10px;
+        margin: 90px 0px 70px 0px;
+    }
+    #solutions .col-lg-4{
+        /* padding:0px; */
     }
     .left .btn{
         font-size: 16px;
         padding: 6px 8px 6px 10px;
     }
-}   
-@media only screen and (max-width:576){
+    .footer_mid_content li a {
+        text-decoration: none;
+        font-size: 13px;
+    }
+    .footer{
+        margin-top: 70px;
+    }
+    .footer .owl-carousel{
+        margin: 0;
+    }
+    .footer .container {
+       
+        max-width: 100%;
+      
+    }
+} 
+
+@media only screen and (max-width:576px){
     .banner_content h1 {
         font-weight: 900;
         font-size: 44px;
         line-height: 60px;
     }
+    .companies-heading h2{
+        font-size: 28px;
+    }
+    .companies-heading h3{
+        font-size: 20px;
+    }   
 }
+@media only screen and (max-width:480px){
+    .banner_content h1 {
+        font-weight: 900;
+        font-size: 39px;
+        line-height: 60px;
+    }
+    .companies-heading h2{
+        font-size: 20px;
+        margin-bottom: 20px;
+        line-height: 1px;
+    }
+    .companies-heading h3{
+        font-size: 16px;
+        padding-bottom: 0px;
+    }
+    section#solutions{
+        padding: 45px 0px 55px 0px;
+    }
+    .solution-heading h2{
+        font-size:34px;
+        line-height: 47px;
+    }
+    .solution-heading p{
+        font-size: 23px;
+    }
+    .right h3{
+        font-size: 30px;
+    }
+    .right p{
+        font-size: 20px;
+        line-height:30px;
+        padding-top: 10px;
+    }
+    .right h3{
+        padding-top: 30px;
+        line-height: 2px;
+    }
+    .insights_heading h2{
+        font-size: 33px;
+        line-height: 21px;
+    }
+    button.btn.btn-light{
+        margin: -12px 0px 0px -103px;
+    }
+    .dropdown{
+        width: 100%;
+    }
+    #talk{
+        margin:80px 0px 80px 0px;
+        padding: 16px 0px 25px;
+    }
+    .dropdown-toggle::after {
+     margin-left: 2em;
+    }
+    .drop_btn{
+        max-width: 100%;
+    }
+    .left input{
+        padding: 6px 0px 6px 8px;
+        
+    }
+    .left p{
+        /* padding-top: 48px; */
+        font-size: 20px;    
+        line-height: 31px;
+    }
+    .insights_heading h2{
+        font-size:35px;
+    }
+    .insights_heading p{
+        font-size:20px;
+    }
+    .banner_content .btn{
+        padding: 7px 7px 7px 10px;
+    }
+    .card_arrow::after {
+        position: relative;
+        left: 74%;
+        top:-22px;
+    }
+    .footer_top{
+        padding: 30px 0px;
+        margin: 0;
+    }
+    .footer_top_content_main{
+        padding: 20px 0 5px;
+    }
+    .navbar-brand img{
+        max-width: 150px;
+    }
+}
+
+@media only screen and (max-width:280px){
+    .companies-heading h2{
+        font-size: 30px;
+    }
+    .companies-heading h3{
+        font-size: 20px;
+    }
+    #solutions{
+        padding: 50px 0px 50px 0px;
+    }
+}
+
+
+  
+
+
+
 
 .slick-initialized .slick-slide {
     /* display: block; */
