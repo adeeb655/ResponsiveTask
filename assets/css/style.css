@@ -225,8 +225,14 @@ line-height: 18px;
     border: 1px solid #CECECE;
     border-radius: 2px;
 }
+.card-body{
+    text-align: left;
+}
 .card-content figure img{
     width: 100%;
+}
+.card_content{
+    align-items: left;
 }
 .card-content h3{
     margin: 15px;
@@ -243,9 +249,9 @@ line-height: 18px;
 button.btn.btn-light {  
     color: red;
     border: none;
-    margin: 0px 0px 0px -257px;
     background-color: transparent;
-    padding: 10px;    font-family: 'Poppins', sans-serif;
+    padding: 0px;    
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 31px;
@@ -321,10 +327,11 @@ align-items: center;
     line-height: 81px; 
     padding: 10px 0px;
 }
+
 .right p{
     font-size: 41px;
     line-height: 62px;
-    padding-bottom: 30px;
+    /* padding-bottom: 30px; */
 }
 .drop_btn{
     width: 100%;
@@ -515,9 +522,7 @@ border: 1px solid #CECECE;
 border-radius: 2px;
 }
 @media only screen and (max-width:1024px){
-    button.btn.btn-light{
-        margin-left: -106px;
-    }
+   
     input[type="email"]{
         padding: 8px 0px;
     }
@@ -676,9 +681,7 @@ border-radius: 2px;
         font-size: 33px;
         line-height: 21px;
     }
-    button.btn.btn-light{
-        margin: -12px 0px 0px -103px;
-    }
+   
     .dropdown{
         width: 100%;
     }
